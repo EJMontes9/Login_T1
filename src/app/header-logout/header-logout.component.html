@@ -1,0 +1,10 @@
+<mat-toolbar class="toolbar">
+    <span>Amazing</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" (click)="LoginOpenFunc()">
+      <mat-icon class="person-icon">account_circle</mat-icon>
+    </button>
+  </mat-toolbar>
+  <div *ngIf="LoginOpen == false" class="log">
+    <app-login></app-login>
+  </div>

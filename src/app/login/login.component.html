@@ -1,0 +1,21 @@
+<section class="modal">
+    <div class="modal_container">
+        <h2>Login</h2>
+        <button mat-icon-button class="Btclose" aria-label="Example icon-button with one person">
+          <mat-icon>close</mat-icon>
+        </button>
+        <mat-form-field appearance="fill">
+            <mat-label>Usuario</mat-label>
+            <input id="username" matInput>
+          </mat-form-field>
+        
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+          <button mat-flat-button color="primary">Iniciar Sesion</button>
+    </div>
+</section>
