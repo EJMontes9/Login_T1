@@ -1,7 +1,7 @@
-<section class="modal">
+<section *ngIf="LoginOpen == true"  class="modal">
     <div class="modal_container">
         <h2>Login</h2>
-        <button mat-icon-button class="Btclose" aria-label="Example icon-button with one person">
+        <button mat-icon-button class="Btclose" aria-label="Example icon-button with one person" (click)="CloseLogin()">
           <mat-icon>close</mat-icon>
         </button>
         <mat-form-field appearance="fill">

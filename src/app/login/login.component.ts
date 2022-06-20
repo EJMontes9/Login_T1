@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   hide = true;
+  LoginOpen: boolean = true;
   constructor() { }
   ngOnInit(): void {
     
   }
 
-  
-
+  CloseLogin() {
+     this.LoginOpen = false;
+  }
 }
