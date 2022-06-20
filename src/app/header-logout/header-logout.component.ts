@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SwitchLoginService } from '../services/switch-login.service';
 
 
 @Component({
@@ -9,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderLogoutComponent implements OnInit {
   LoginOpen:boolean = true;
 
-  constructor() { }
+  constructor(private modal:SwitchLoginService) { }
 
   ngOnInit(): void {
+    this.modal.$modal.subscribe((valor)=>{this.LoginOpen = valor});
   }
 
   LoginOpenFunc(){
