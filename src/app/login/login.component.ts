@@ -16,6 +16,4 @@ export class LoginComponent implements OnInit {
   CloseLogin(){
     this.modals.$modal.emit(true);
   }
-
-  
 }

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Vollkorn&display=swap');
+
 
 .Principal{
     margin-top: 20%;
@@ -38,6 +39,40 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
-    position: absolute;
-    z-index: -1;
+}
+
+.titulos{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.prod{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+.image img{
+    width: 90%;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.box{
+    background-color: rgb(221, 221, 221);
+    width: 70%;
+    border-radius: 10px;
+    text-align: center;
+    padding: .5em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.precio{
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
 }
