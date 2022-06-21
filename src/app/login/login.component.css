@@ -42,10 +42,14 @@
     width: 30%;
     background-color: #fff;
     margin: auto;
-    display: grid;
+    
     grid-template-columns: 1 1;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .formLogin{
+    display: grid;
+    grid-template-columns: 1 1;
   }
 
 /*Poner el icono a la derecha*/
