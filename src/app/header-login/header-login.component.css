@@ -7,7 +7,7 @@ span{
 
 
 
-.Logout-icon{
+.highlight_off-icon{
   margin-top : 3px;
   font-size: 40px;
   width: 40px;
@@ -24,3 +24,7 @@ span{
     position: absolute;
     z-index: 2;
   }
+
+ h2{
+  margin-right: 2%;
+ }

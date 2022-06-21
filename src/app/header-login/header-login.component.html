@@ -1,9 +1,10 @@
-<div *ngIf="LoginUser == false">
-    <mat-toolbar class="toolbar">
-      <span>Amazing2</span>
-      <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon" >
-        <mat-icon class="Logout-icon">Logout</mat-icon>
-      </button>
-    </mat-toolbar>
-  </div>
+<mat-toolbar class="toolbar">
+  <span>Amazing</span>
+  <span class="example-spacer"></span>
+  <h2>Bienvenido Admin</h2>
+  <button mat-icon-button class="example-icon" (click)="LogoutFunc()">
+    <mat-icon class="highlight_off-icon">highlight_off</mat-icon>
+  </button>
+</mat-toolbar>
+
+<app-home></app-home>

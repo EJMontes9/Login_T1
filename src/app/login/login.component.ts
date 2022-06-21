@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { SwitchLoginService } from '../services/switch-login.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,9 +12,10 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 export class LoginComponent implements OnInit {
   form:FormGroup;
 
-  hide = true;
+  hide = false;
   constructor(private modals: SwitchLoginService,
     private fb: FormBuilder,
+    private router:Router,
     private _snackBar: MatSnackBar) { 
 
       this.form = this.fb.group({
@@ -35,8 +37,7 @@ export class LoginComponent implements OnInit {
     const usuario = this.form.value.usuario;
     const password = this.form.value.password;
     if(usuario == 'admin' && password == 'admin'){
-      
-      
+      this.router.navigate(['/UserLog']);
     }
     else{
       this.texterror();

@@ -15,6 +15,7 @@ import {MatInputModule} from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderLoginComponent } from './header-login/header-login.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     HomeComponent,
     LoginComponent,
     HeaderLoginComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
