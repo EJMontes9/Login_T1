@@ -10,7 +10,8 @@ import { SwitchLoginService } from '../services/switch-login.service';
 export class HeaderLogoutComponent implements OnInit {
   LoginOpen:boolean = true;
 
-  constructor(private modal:SwitchLoginService) { }
+  constructor(private modal:SwitchLoginService,
+    private HeaderLoging:SwitchLoginService) { }
 
   ngOnInit(): void {
     this.modal.$modal.subscribe((valor)=>{this.LoginOpen = valor});

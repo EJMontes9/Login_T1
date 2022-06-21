@@ -12,6 +12,9 @@ import {MatButtonModule} from '@angular/material/button';
 import { LoginComponent } from './login/login.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderLoginComponent } from './header-login/header-login.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -20,6 +23,7 @@ import {MatInputModule} from '@angular/material/input';
     HeaderLogoutComponent,
     HomeComponent,
     LoginComponent,
+    HeaderLoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import {MatInputModule} from '@angular/material/input';
     MatIconModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
