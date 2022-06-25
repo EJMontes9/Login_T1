@@ -1,171 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Vollkorn&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Vollkorn&display=swap");
 
-
-.Principal{
-    margin-top: 20%;
-    color: #fff;
+.Principal {
+  margin-top: 20%;
+  color: #fff;
 }
 
-.Principal h1{
-    font-size: 60px;
-    text-align: right;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    margin-right: 10%;
-    font-family: 'Abril Fatface', cursive;
+.Principal h1 {
+  font-size: 60px;
+  text-align: right;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  margin-right: 10%;
+  font-family: "Abril Fatface", cursive;
 }
 
-.Principal h2{
-    font-size: 25px;
-    text-align: right;
-    margin-top: 1%;
-    margin-right: 10%;
-    font-family: 'Vollkorn', serif;
+.Principal h2 {
+  font-size: 25px;
+  text-align: right;
+  margin-top: 1%;
+  margin-right: 10%;
+  font-family: "Vollkorn", serif;
 }
 
-.Principal p{
-    font-size: 20px;
-    text-align: right;
-    margin-top: 2%;
-    margin-left: 60%;
-    margin-right: 10%;
-    font-family: 'Vollkorn', serif;
+.Principal p {
+  font-size: 20px;
+  text-align: right;
+  margin-top: 2%;
+  margin-left: 60%;
+  margin-right: 10%;
+  font-family: "Vollkorn", serif;
 }
 
-.container2{
-    /*Imagen de fondo*/
-    background: rgba(0, 0, 0, 0.4) url('src/assets/img/Fondo1.jpg');
-    padding: 20px 0px 400px 20px ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
+.slider {
+  margin: 0 auto;
 }
 
-.titulos{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 25px;
+.titulos {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 25px;
 }
 
-.prod{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 3%;
+.prod {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
 }
 
-.image img{
-    width: 90%;
-    margin: 10px;
-    border-radius: 15px;
+.image img {
+  width: 90%;
+  margin: 10px;
+  border-radius: 15px;
 }
 
-.box{
-    background-color: rgb(221, 221, 221);
-    width: 70%;
-    border-radius: 10px;
-    text-align: center;
-    padding: .5em;
-    font-family: 'Roboto Slab', serif;
+.box {
+  background-color: rgb(221, 221, 221);
+  width: 70%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.5em;
+  font-family: "Roboto Slab", serif;
 }
 
-.precio{
-    font-size: 20px;
-    font-family: 'Roboto Slab', serif;
+.precio {
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
 }
 /*BELTRAN- TESTIMONIOS*/
-body{
-    margin : 0;
-    padding: e;
-    box-sizing : border-box;
-    font-family: Montserrat;
+body {
+  margin: 0;
+  padding: e;
+  box-sizing: border-box;
+  font-family: Montserrat;
 }
-.cards{
-background:#28223f;
-display: grid;
-place-items: center;
-min-height: 108vh;
-}
-
-.outer{
-display: flex;
-align-items : center;
-justify-content : center;
+.cards {
+  background: #28223f;
+  display: grid;
+  place-items: center;
+  min-height: 108vh;
 }
 
-.cards .card{
-background:#fff;
-padding: 1.5rem;
-max-width: 38rem;
-border-radius : .5rem;
-position : absolute;
-pointer-events : none;
-opacity: 0;
-animation: animate 15s infinite linear;
-animation-delay: calc(3s * var(--delay));
-}
-.profile, .header{
-display: flex;
-align-items: center;
-}
-.header{
-justify-content: space-between;
-}
-.profile{
-    margin-bottom: 1rem;
-}
-.profile .img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    padding: 5px;
-    overflow: hidden;
-    background: #fff;
-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.178);
-}
-.profile .img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 58%;
-}
-.profile .details{
-    margin-left:10px;
-}
-.op-star{
-    color:#28223f;
-    font-size: 1.1rem;
-}
-.outer:hover .card{
-    animation-play-state: paused;
-}
-.cards .card:last-child{
-animation-delay: calc(-3s * var(--delay));
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes animate{
-0%{
+.cards .card {
+  background: #fff;
+  padding: 1.5rem;
+  max-width: 38rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  animation: animate 15s infinite linear;
+  animation-delay: calc(3s * var(--delay));
+}
+.profile,
+.header {
+  display: flex;
+  align-items: center;
+}
+.header {
+  justify-content: space-between;
+}
+.profile {
+  margin-bottom: 1rem;
+}
+.profile .img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 5px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.178);
+}
+.profile .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 58%;
+}
+.profile .details {
+  margin-left: 10px;
+}
+.op-star {
+  color: #28223f;
+  font-size: 1.1rem;
+}
+.outer:hover .card {
+  animation-play-state: paused;
+}
+.cards .card:last-child {
+  animation-delay: calc(-3s * var(--delay));
+}
+
+@keyframes animate {
+  0% {
     opacity: 0;
     transform: translateY(100%) scale(0.5);
-}
-5%, 20%{
+  }
+  5%,
+  20% {
     opacity: 0.4;
     transform: translateY(100%) scale(0.7);
-}
-25%,40%{
+  }
+  25%,
+  40% {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0%) scale(1);
-}
-45%,60%{
+  }
+  45%,
+  60% {
     opacity: 0.4;
     transform: translateY(-100%) scale(0.7);
-}
-65%,100%{
+  }
+  65%,
+  100% {
     opacity: 0;
     transform: translateY(-100%) scale(0.5);
-}
+  }
 }

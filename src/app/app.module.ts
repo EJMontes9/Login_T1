@@ -16,6 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderLoginComponent } from './header-login/header-login.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FooterComponent } from './footer/footer.component';
+import { SliderComponent } from './slider/slider.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -26,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     HeaderLoginComponent,
     FooterComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { FooterComponent } from './footer/footer.component';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
