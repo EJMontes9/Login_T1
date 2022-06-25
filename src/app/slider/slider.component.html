@@ -1,0 +1,11 @@
+<ngb-carousel>
+    <ng-template *ngFor="let ropa of ropas" ngbSlide>
+        <div class="picsum-img-wrapper imagen-content">
+            <img class="imagen" src="{{ropa.img}}" alt="Random first slide">
+        </div>
+        <div class="carousel-caption texto">
+            <h3 class="titulo">{{ropa.name}}</h3>
+            <p class="descripcion">{{ropa.description}}</p>
+        </div>
+    </ng-template>
+</ngb-carousel>
