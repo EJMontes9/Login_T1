@@ -76,6 +76,64 @@
     font-size: 20px;
     font-family: 'Roboto Slab', serif;
 }
+
+.divSale{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.4) url('https://images.unsplash.com/photo-1549971352-c31ced98e984?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    width: 40%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.divSale2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.4) url('https://images.unsplash.com/photo-1489939078242-0a1dc4a08f06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    width: 40%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.divSale2 h1{
+    font-size: 60px;
+    padding-top: 25%;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    color: #fff;
+}
+
+
+.divSale h1{
+    font-size: 60px;
+    padding-top: 20%;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    color: #fff;
+}
+.divSale h2{
+    font-size: 40px;
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+  }
+
 /*BELTRAN- TESTIMONIOS*/
 body{
     margin : 0;
