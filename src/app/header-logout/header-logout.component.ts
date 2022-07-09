@@ -8,7 +8,7 @@ import { SwitchLoginService } from '../services/switch-login.service';
   styleUrls: ['./header-logout.component.css']
 })
 export class HeaderLogoutComponent implements OnInit {
-  LoginOpen:boolean = true;
+  LoginOpen:boolean = false;
 
   constructor(private modal:SwitchLoginService,
     private HeaderLoging:SwitchLoginService) { }
@@ -18,7 +18,7 @@ export class HeaderLogoutComponent implements OnInit {
   }
 
   LoginOpenFunc(){
-    this.LoginOpen = false;
+    this.LoginOpen = true;
   }
 
 }

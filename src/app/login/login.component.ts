@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
   }
 
   CloseLogin(){
-    this.modals.$modal.emit(true);
+    this.modals.$modal.emit(false);
   }
 
   ingresar(){
